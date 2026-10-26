@@ -1,29 +1,78 @@
 <!DOCTYPE html>
-<html >
+<html>
 <head>
 <meta charset="UTF-8">
-<title>karry自我介绍</title>
+<title>潮汐moon</title>
+<style>
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  height:100vh;
+  background:url("猫猫.jpg")no-repeat center center;
+  background-size:70% auto;
+  background-position:center;
+  display:flex;
+  flex-direction:column;
+align-items:center;
+  padding-top:50px;
+  color:#72b8ff;
+}
+.top-text{
+  font-size:25px;
+  opacity:0.7;
+  margin-bottom:8px;
+}
+h1{
+  font-size:38px;
+  font-weight:normal;
+  margin:12px 0;
+}
+.eng{
+  font-size:16px;
+  letter-spacing:6px;
+  opacity:0.7;
+}
+.info{
+  margin:24px 0 45px;
+  opacity:0.6;
+}
+.btn{
+  border:2px solid #c8a860;
+  padding:14px 42px;
+  font-size:18px;
+  background:rgba(0,0,0,0.35);
+  color:#5898e8;
+}
+.btn:hover{
+  background:rgba(200,168,96,0.2);
+}
+.bottom{
+  position:absolute;
+  bottom:32px;
+  font-size:12px;
+  opacity:0.4;
+}
+.box{
+  padding:14px 42px;
+  font-size:18px;
+  background:rgba(0,0,0,0);
+  color:#5898e8;
+  text-decoration:none;
+  text-align:center;
+}
+</style>
 </head>
 <body>
-<h1>欢迎来到我的自我介绍</h1>
-<a href="">这是我的自我介绍</a>
-<p>hello,我是物联4264甘宇雪,欢迎来了解我。</p>
-<!-- 按钮 -->
-<button onclick="showText()">点这里查看me</button>
-<div id="myinfo" style="display:none;margin-tap:10px;">
-</p>一枚水瓶女，喜欢临摹绘画，好奇心强，喜欢尝试各种新事物，热爱生物，对生命充满探索欲
-同时是一枚小螃蟹，小说爱好者。</p>
+<div class="box">
+<div class="top-text">欢迎来到</div>
+<h1>潮汐</h1>
+<div class="eng">GENSHIN IMPACT</div>
+<p class="info">一份观察自己的log</p >
+<a href="about.html " class="btn">点击进入</a >
 </div>
-<script>
-function showText(){
-let box =
-document.getElementById("myinfo")
-if box.style.display === "none"){
-box.style.display = "block"
- }else{
-box.style.display = "none"
- }
-}
-</script>
+<div class="bottom">月变</div>
+
 </body>
 </html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>观察log</title>
+<style>
+body{
+ height:100vh;
+background-image:url("封面.jpg");no-repeat center center;
+background-size:contain;
+background-position:center;
+display:flex;
+flex-direction:column;
+align-items:center;
+pandding-top:80px;
+color:#0088cc;
+font-size:20px;
+}
+h2{
+color:#3688bb;
+font-size:38px;
+}
+p{
+color:#224455;
+font-size:28px;
+line-heigh:1.7;
+}
+.dropdown{
+    position:relative;
+    display:inline-block;
+    margin-top:40px;
+}
+.main-btn{
+    background:#68a9dd;
+    color:white;
+    padding:12px 24px;
+    border:none;
+    font-size:18px;
+    border-radius:8px;
+    cursor:pointer;
+}
+.pop-menu{
+    display:none;
+    position:absolute;
+    background:#ffffff;
+    min-width:160px;
+    box-shadow:0px 8px 16px rgba(0,0,0,0.2);
+    z-index:99;
+    border-radius:8px;
+}
+.pop-menu a{
+    display:block;
+    padding:12px 16px;
+    text-decoration:none;
+    color:#222;
+}
+.pop-menu a:hover{
+    background:#e8f2fa;
+}
+.dropdown:hover .pop-menu{
+    display:block;
+}
+</style>
+</head>
+<body>{
+<div style="background:rgba(255,255,255,0.65);
+ padding:20px; 
+border-radius:12px;">
+<h2>关于我</h2>
+<p>欢迎来到潮汐起🌊
+我是一个活泼开朗的观察者，喜欢留意身边大大小小的事物，随手记录自己的想法与感受。喜欢临摹绘画（背景图是我的临摹之一），对很多事情都抱有满满的好奇心。希望在智行合一，可以与你一起度过愉快时光。</p >
+<div class="dropdown">
+<button class="main-btn">打开我的栏目 ▼</button>
+<div class="pop-menu">
+<a href=" ">返回潮汐起首页</a >
+<a href="main.html">前往我的log日志</a >
+<a href="about.html">关于我</a >
+</div>
+<script>
+function qiehuan(){
+  let n = document.getElementById("neirong")
+  if(n.style.display == "none"){
+    n.style.display = "block"
+  }else{
+    n.style.display = "none"
+  }
+}
+<button onclick="qiehuan()">返回首页</button>
+<a href="index.html">← 返回潮汐起首页</a >
+</body>
+</html>

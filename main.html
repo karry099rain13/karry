@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>karry自我介绍</title>
+</head>
+<body>
+<style>
+body{
+height:100vh;
+background:url("兔兔.jpg")no-repeat center center;
+background-size:70% auto;
+background-position:center;
+display:flex;
+flex-direction:column;
+pandding-top:80px;
+color:#0088cc;
+font-size:20px;
+}
+h1{
+font-size:22px;
+}
+p{
+font-size:26px;
+color:#203947'
+text-shadow:0.5px 0.5px 1px rgba(0,0,0,0.3);
+}
+button{
+font-size:14px;
+padding:6px 12px;
+width:fit-content;
+}
+</style>
+<h1>欢迎来到我的log</h1>
+<a href="">这是我的观察</a >
+<p>hello,我是物联4264甘宇雪,欢迎与我一起见证潮汐。</p >
+<button onclick="qiehuan1()">点击查看log1</button>
+<div id="neirong1" style="display:none;margin-top:0px";>
+<p>log1：一枚水瓶女，喜欢临摹绘画，好奇心强，喜欢尝试各种新事物，热爱生物，对生命充满探索欲</p >
+</div>
+<button onclick="qiehuan2()">点击查看log2</button>
+<div id="neirong2" style="display:none;margin-top:0px";>
+<p>log2：一枚好学女，尝试许多门课，所谓“技不压身”，我探索适合自己的道路同时掌握各种技能。</p >
+</div>
+<button onclick="qiehuan3()">点击查看log3</button>
+<div id="neirong3" style="display:none;margin-top:0px";>
+<p>log3：一枚乐观女，虽然每天都有意外发生，但我依旧认为”既已发生与其埋怨不如顺其自然“，活在当下走好脚下每一步。</p>
+</div>
+<br>
+<button onclick="location.href='index.html'">返回主页</button>
+<script>
+function qiehuan1(){
+    let n1 = document.getElementById("neirong1");
+    if(n1.style.display === "none"){
+        n1.style.display = "block";
+    }else{
+        n1.style.display = "none";
+    }
+}
+function qiehuan2(){
+    let n2 = document.getElementById("neirong2");
+    if(n2.style.display === "none"){
+        n2.style.display = "block";
+    }else{
+        n2.style.display = "none";
+    }
+}
+function qiehuan3(){
+    let n3 = document.getElementById("neirong3");
+    if(n3.style.display === "none"){
+        n3.style.display = "block";
+    }else{
+        n3.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>
